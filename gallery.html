@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects &amp; Gallery | Built Right Construction</title>
+  <meta name="description" content="See our work. Kitchen remodels, bathroom renovations, additions, demolition, basements, and custom carpentry projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="container">
+      <span>Serving [Your Area] and surrounding communities</span>
+      <div>
+        <a href="tel:+15551234567">&#9742; (555) 123-4567</a>
+        &nbsp;&bull;&nbsp;
+        <a href="mailto:info@builtrightconstruction.com">info@builtrightconstruction.com</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Built<span>Right</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html" class="active">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="nav-cta">Free Estimate</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Our Projects</h1>
+      <p>Real work for real homeowners. No stock photos.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="kitchen">Kitchens</button>
+        <button class="filter-btn" data-filter="bathroom">Bathrooms</button>
+        <button class="filter-btn" data-filter="addition">Additions</button>
+        <button class="filter-btn" data-filter="basement">Basements</button>
+        <button class="filter-btn" data-filter="demolition">Demolition</button>
+        <button class="filter-btn" data-filter="carpentry">Carpentry</button>
+        <button class="filter-btn" data-filter="deck">Decks &amp; Patios</button>
+      </div>
+
+      <div class="gallery-full">
+        <!-- Kitchen projects -->
+        <div class="gallery-item" data-category="kitchen">
+          [Kitchen Before Photo]
+          <div class="gallery-label">Kitchen Remodel — Before</div>
+        </div>
+        <div class="gallery-item" data-category="kitchen">
+          [Kitchen After Photo]
+          <div class="gallery-label">Kitchen Remodel — After</div>
+        </div>
+        <div class="gallery-item" data-category="kitchen">
+          [Kitchen Detail Photo]
+          <div class="gallery-label">Custom Cabinets &amp; Countertops</div>
+        </div>
+
+        <!-- Bathroom projects -->
+        <div class="gallery-item" data-category="bathroom">
+          [Bathroom Before Photo]
+          <div class="gallery-label">Bathroom — Before</div>
+        </div>
+        <div class="gallery-item" data-category="bathroom">
+          [Bathroom After Photo]
+          <div class="gallery-label">Bathroom — After</div>
+        </div>
+        <div class="gallery-item" data-category="bathroom">
+          [Tile Shower Photo]
+          <div class="gallery-label">Custom Tile Shower</div>
+        </div>
+
+        <!-- Additions -->
+        <div class="gallery-item" data-category="addition">
+          [Addition Framing Photo]
+          <div class="gallery-label">Room Addition — Framing</div>
+        </div>
+        <div class="gallery-item" data-category="addition">
+          [Addition Finished Photo]
+          <div class="gallery-label">Room Addition — Finished</div>
+        </div>
+
+        <!-- Basements -->
+        <div class="gallery-item" data-category="basement">
+          [Basement Before Photo]
+          <div class="gallery-label">Basement — Before</div>
+        </div>
+        <div class="gallery-item" data-category="basement">
+          [Basement After Photo]
+          <div class="gallery-label">Basement — Finished</div>
+        </div>
+
+        <!-- Demolition -->
+        <div class="gallery-item" data-category="demolition">
+          [Interior Demo Photo]
+          <div class="gallery-label">Interior Gut Job</div>
+        </div>
+        <div class="gallery-item" data-category="demolition">
+          [Structure Demo Photo]
+          <div class="gallery-label">Structural Demolition</div>
+        </div>
+
+        <!-- Carpentry -->
+        <div class="gallery-item" data-category="carpentry">
+          [Trim Work Photo]
+          <div class="gallery-label">Crown Molding &amp; Trim</div>
+        </div>
+        <div class="gallery-item" data-category="carpentry">
+          [Built-in Photo]
+          <div class="gallery-label">Custom Built-Ins</div>
+        </div>
+
+        <!-- Decks -->
+        <div class="gallery-item" data-category="deck">
+          [Deck Build Photo]
+          <div class="gallery-label">Composite Deck Build</div>
+        </div>
+        <div class="gallery-item" data-category="deck">
+          [Patio Photo]
+          <div class="gallery-label">Paver Patio</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Like What You See?</h2>
+      <p>Your project could look like this. Let's talk about what you have in mind.</p>
+      <a href="contact.html" class="btn btn-white">Request a Free Estimate</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="logo">Built<span>Right</span></div>
+          <p>Full-service construction and demolition. 35 years of building homes the right way. Licensed, insured, and ready to work.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About Us</a>
+          <a href="gallery.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>&#9742; (555) 123-4567</p>
+          <p>&#9993; info@builtrightconstruction.com</p>
+          <p>&#9872; [Your City, State]</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Built Right Construction. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.gallery-item').forEach(item => {
+          item.style.display = (filter === 'all' || item.dataset.category === filter) ? '' : 'none';
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
