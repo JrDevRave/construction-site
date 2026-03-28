@@ -3,164 +3,242 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services | Built Right Construction</title>
-  <meta name="description" content="Kitchen remodeling, bathroom renovation, additions, demolition, basements, garages, carpentry, flooring, tile, and custom construction. 35 years experience.">
+  <title>Construction &amp; Demolition Services | Dino's Construction and Demolition LLC</title>
+  <meta name="description" content="Explore kitchen remodels, bathroom remodels, basement finishing, additions, garage builds, demolition, and custom projects from Dino's Construction and Demolition LLC in Macomb County and St. Clair County.">
+  <meta property="og:title" content="Services | Dino's Construction and Demolition LLC">
+  <meta property="og:description" content="Remodeling, additions, demolition, and custom construction across Macomb County and St. Clair County.">
+  <meta property="og:image" content="images/projects/og-image.jpg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#151a1c">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <div class="top-bar">
     <div class="container">
-      <span>Serving [Your Area] and surrounding communities</span>
-      <div>
-        <a href="tel:+15551234567">&#9742; (555) 123-4567</a>
-        &nbsp;&bull;&nbsp;
-        <a href="mailto:info@builtrightconstruction.com">info@builtrightconstruction.com</a>
+      <div class="top-bar-info">
+        <span>Serving Macomb County and St. Clair County first, with surrounding projects welcomed.</span>
+      </div>
+      <div class="top-bar-links">
+        <a href="tel:5865314759">586-531-4759</a>
+        <span>|</span>
+        <a href="mailto:Dsdemocon@gmail.com">Dsdemocon@gmail.com</a>
       </div>
     </div>
   </div>
 
   <header class="site-header">
     <div class="container nav-wrap">
-      <a href="index.html" class="logo">Built<span>Right</span></a>
-      <nav>
+      <a class="brand" href="index.html" aria-label="Dino's Construction and Demolition LLC home">
+        <span class="brand-title">Dino's <span>Construction</span></span>
+        <span class="brand-subtitle">And Demolition LLC</span>
+      </a>
+
+      <button class="mobile-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span class="mobile-toggle-bar"></span>
+        <span class="mobile-toggle-bar"></span>
+        <span class="mobile-toggle-bar"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" data-nav>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="services.html" class="active">Services</a></li>
+          <li><a class="active" href="services.html">Services</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="gallery.html">Projects</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="contact.html" class="nav-cta">Free Estimate</a></li>
+          <li><a class="nav-cta" href="contact.html">Free Estimate</a></li>
         </ul>
       </nav>
-      <button class="mobile-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
-        <span></span><span></span><span></span>
-      </button>
     </div>
   </header>
 
-  <section class="page-hero">
-    <div class="container">
-      <h1>Our Services</h1>
-      <p>Everything from demolition to finish work. One crew, one standard.</p>
-    </div>
-  </section>
+  <main id="main">
+    <section class="page-hero" style="--hero-image: url('images/projects/addition-framing.jpg');">
+      <div class="container">
+        <div class="section-kicker">Services</div>
+        <h1>Construction, remodeling, and demolition services</h1>
+        <p>Dino's Construction and Demolition LLC works across the projects homeowners call about most, with room for one-off custom scopes too.</p>
+      </div>
+    </section>
 
-  <section class="section">
-    <div class="container">
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Full Service List</div>
+          <div class="section-heading">
+            <h2>Seven core service categories, built for real lead generation</h2>
+          </div>
+          <p class="section-copy">Each card below is written for a live service page, with clear service naming and enough detail for homeowners in Macomb County and St. Clair County to quickly see whether Dino's Construction and Demolition LLC is a fit.</p>
+        </div>
 
-      <div class="service-detail">
-        <div class="service-detail-img">[Photo: Kitchen remodel in progress]</div>
-        <div class="service-detail-text">
-          <h3>Kitchen Remodeling</h3>
-          <p>We tear out the old and build the new — from subfloor to ceiling. Custom cabinetry, countertop installation, plumbing relocations, electrical upgrades, tile backsplashes, and flooring. Your kitchen gets built by one crew that handles every trade, so nothing falls through the cracks.</p>
-          <a href="contact.html" class="btn btn-primary">Get an Estimate</a>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-image">
+              <img src="images/gallery/kitchen%20different.png" alt="Finished kitchen remodel with island and lighting" loading="lazy">
+            </div>
+            <div class="service-body">
+              <span class="service-tag">Kitchen Remodels</span>
+              <h3>Kitchen Remodels</h3>
+              <p>Update the most-used room in the house with a layout that works better, durable finishes, and a cleaner overall look. From tear-out through rebuild, the project stays organized around the end result you actually want to live with.</p>
+              <ul class="service-list">
+                <li>Cabinets, counters, flooring, trim, and finish updates</li>
+                <li>Layout changes and rebuild work after demo</li>
+                <li>Designed for better flow, storage, and everyday use</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-image">
+              <img src="images/gallery/bathroom%202.png" alt="Finished bathroom remodel with walk-in shower" loading="lazy">
+            </div>
+            <div class="service-body">
+              <span class="service-tag">Bathroom Remodels</span>
+              <h3>Bathroom Remodels</h3>
+              <p>Bathrooms need more than a cosmetic refresh. We focus on durable surfaces, clean installations, and a finished space that feels polished while still being practical for daily routines.</p>
+              <ul class="service-list">
+                <li>Shower and tub areas, vanities, flooring, and trim</li>
+                <li>Full tear-out options for complete bathroom rebuilds</li>
+                <li>Updated style without sacrificing long-term usability</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-image">
+              <img src="images/projects/hero-finish.jpg" alt="Finished interior room with wide plank flooring" loading="lazy">
+            </div>
+            <div class="service-body">
+              <span class="service-tag">Basement Finishing</span>
+              <h3>Basement Finishing</h3>
+              <p>Turn unfinished square footage into living space that feels intentional. Whether you want more family space, a recreation room, or a flexible lower-level setup, the goal is to make the basement feel like part of the home instead of leftover space.</p>
+              <ul class="service-list">
+                <li>Framing, layout planning, finishes, and room build-outs</li>
+                <li>Options for storage, entertainment, or added living space</li>
+                <li>Built with comfort, flow, and daily use in mind</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-image">
+              <img src="images/projects/about-framing.jpg" alt="Interior framing work for a room addition" loading="lazy">
+            </div>
+            <div class="service-body">
+              <span class="service-tag">Room Additions</span>
+              <h3>Room Additions</h3>
+              <p>When the house needs more space, an addition should feel like it belongs. We help build out extra square footage with a focus on how the new space connects to the original home, both functionally and visually.</p>
+              <ul class="service-list">
+                <li>Extra living areas, expanded layouts, and flexible new rooms</li>
+                <li>Framing and structural build work matched to the existing home</li>
+                <li>Thoughtful transitions from old space to new space</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-image">
+              <img src="images/projects/garage-shell.jpg" alt="Framed structure with windows installed" loading="lazy">
+            </div>
+            <div class="service-body">
+              <span class="service-tag">Garage Builds</span>
+              <h3>Garage Builds</h3>
+              <p>Need a new garage or enclosed utility space? Garage builds can add storage, function, and property value when they are planned well and built with the same attention as the rest of the home.</p>
+              <ul class="service-list">
+                <li>Detached or attached garage project discussions</li>
+                <li>Shell, framing, and build-out planning around your property</li>
+                <li>Practical spaces for parking, storage, workshop use, or overflow</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-image">
+              <img src="images/projects/site-prep.jpg" alt="Site preparation and foundation deck work in progress" loading="lazy">
+            </div>
+            <div class="service-body">
+              <span class="service-tag">Full Demolition</span>
+              <h3>Full Demolition</h3>
+              <p>Some projects begin with a clean slate. Full demolition work clears the way for remodels, rebuilds, or larger structural changes while keeping the project moving toward the next construction phase.</p>
+              <ul class="service-list">
+                <li>Whole-room tear-outs and larger demolition scopes</li>
+                <li>Useful when major remodels or rebuilds need a reset</li>
+                <li>Handled as part of a broader build plan whenever needed</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-image">
+              <img src="images/projects/custom-stairs.jpg" alt="Custom staircase framing inside a home" loading="lazy">
+            </div>
+            <div class="service-body">
+              <span class="service-tag">Custom Projects</span>
+              <h3>Custom Projects</h3>
+              <p>Not every homeowner inquiry fits neatly into a standard bucket. Custom projects give you room to ask about unique layouts, specialty spaces, one-off construction needs, or jobs that blend multiple service types together.</p>
+              <ul class="service-list">
+                <li>Good fit for mixed-scope or uncommon residential work</li>
+                <li>Ideal when the project needs demo, build, and finish thinking</li>
+                <li>Start with the idea and we can talk through next steps</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="cta-panel">
+          <div>
+            <h2>Not sure which service bucket fits?</h2>
+            <p>That is normal. Many jobs overlap. Use the estimate form and describe the space, what is changing, and your preferred contact time.</p>
+          </div>
+          <a class="btn btn-light" href="contact.html">Request Estimate</a>
         </div>
       </div>
-
-      <div class="service-detail">
-        <div class="service-detail-img">[Photo: Finished bathroom]</div>
-        <div class="service-detail-text">
-          <h3>Bathroom Remodeling</h3>
-          <p>Full gut-and-rebuild or targeted upgrades. Custom tile showers, freestanding tubs, double vanities, heated floors, new plumbing, and waterproofing done right. We handle the demo, framing, plumbing, electrical, tile, and finish — nothing subbed out, nothing overlooked.</p>
-          <a href="contact.html" class="btn btn-primary">Get an Estimate</a>
-        </div>
-      </div>
-
-      <div class="service-detail">
-        <div class="service-detail-img">[Photo: Room addition framing]</div>
-        <div class="service-detail-text">
-          <h3>Additions &amp; Extensions</h3>
-          <p>More space built to match your existing home. Room additions, second stories, bump-outs, sunrooms, and attached garages. We handle permits, engineering, foundation, framing, roofing, siding, and interior finish. The addition looks like it was always there.</p>
-          <a href="contact.html" class="btn btn-primary">Get an Estimate</a>
-        </div>
-      </div>
-
-      <div class="service-detail">
-        <div class="service-detail-img">[Photo: Demolition work]</div>
-        <div class="service-detail-text">
-          <h3>Demolition</h3>
-          <p>Interior gut jobs, load-bearing wall removal, structural demo, and full tear-downs. We handle permits, utility disconnects, debris hauling, and site prep. Whether you're clearing a room or clearing a structure, we do it safely and efficiently.</p>
-          <a href="contact.html" class="btn btn-primary">Get an Estimate</a>
-        </div>
-      </div>
-
-      <div class="service-detail">
-        <div class="service-detail-img">[Photo: Finished basement]</div>
-        <div class="service-detail-text">
-          <h3>Basement Finishing</h3>
-          <p>Turn dead space into living space. Framing, insulation, drywall, flooring, egress windows, bathrooms, wet bars, and custom built-ins. We deal with moisture issues, ceiling height challenges, and code requirements so you get a basement that's actually comfortable.</p>
-          <a href="contact.html" class="btn btn-primary">Get an Estimate</a>
-        </div>
-      </div>
-
-      <div class="service-detail">
-        <div class="service-detail-img">[Photo: Garage build]</div>
-        <div class="service-detail-text">
-          <h3>Garages &amp; Outbuildings</h3>
-          <p>Detached garages, attached garages, workshops, and storage buildings. Foundation, framing, roofing, siding, electrical, concrete floors, and insulation. Built to match your home or stand on its own.</p>
-          <a href="contact.html" class="btn btn-primary">Get an Estimate</a>
-        </div>
-      </div>
-
-      <div class="service-detail">
-        <div class="service-detail-img">[Photo: Deck and patio]</div>
-        <div class="service-detail-text">
-          <h3>Decks &amp; Patios</h3>
-          <p>Pressure-treated, composite, or hardwood decks built to code with proper footings and framing. Concrete patios, paver installations, and outdoor living spaces. We build it to handle the weather and the weight.</p>
-          <a href="contact.html" class="btn btn-primary">Get an Estimate</a>
-        </div>
-      </div>
-
-      <div class="service-detail">
-        <div class="service-detail-img">[Photo: Custom trim work]</div>
-        <div class="service-detail-text">
-          <h3>Flooring, Tile &amp; Carpentry</h3>
-          <p>Hardwood installation, LVP, ceramic and porcelain tile, custom trim packages, crown molding, wainscoting, built-in shelving, mantels, and staircases. The finish work that makes a house feel finished.</p>
-          <a href="contact.html" class="btn btn-primary">Get an Estimate</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="cta-banner">
-    <div class="container">
-      <h2>Not Sure What You Need?</h2>
-      <p>Tell us what you're working with. We'll walk the site and give you an honest breakdown — no charge.</p>
-      <a href="contact.html" class="btn btn-white">Request a Free Estimate</a>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-about">
-          <div class="logo">Built<span>Right</span></div>
-          <p>Full-service construction and demolition. 35 years of building homes the right way. Licensed, insured, and ready to work.</p>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <span class="brand-title">Dino's <span>Construction</span></span>
+            <span class="brand-subtitle">And Demolition LLC</span>
+          </a>
+          <p>Kitchen remodels, bathroom remodels, basement finishing, additions, garage builds, demolition, and custom residential work.</p>
         </div>
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
-          <a href="about.html">About Us</a>
-          <a href="gallery.html">Projects</a>
-          <a href="contact.html">Contact</a>
+
+        <div class="footer-block">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
-        <div class="footer-contact">
-          <h4>Contact</h4>
-          <p>&#9742; (555) 123-4567</p>
-          <p>&#9993; info@builtrightconstruction.com</p>
-          <p>&#9872; [Your City, State]</p>
+
+        <div class="footer-block">
+          <h3 class="footer-heading">Contact</h3>
+          <ul class="footer-list">
+            <li><a href="tel:5865314759">586-531-4759</a></li>
+            <li><a href="mailto:Dsdemocon@gmail.com">Dsdemocon@gmail.com</a></li>
+            <li>Macomb County and St. Clair County preferred</li>
+          </ul>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Built Right Construction. All rights reserved.</p>
+
+      <div class="footer-note">
+        <span>&copy; <span class="current-year">2026</span> Dino's Construction and Demolition LLC. All rights reserved.</span>
+        <span>We Demo It. We Build It. We Do It Right.</span>
       </div>
     </div>
   </footer>
-
 </body>
 </html>

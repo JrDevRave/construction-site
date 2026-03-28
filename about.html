@@ -3,162 +3,219 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Built Right Construction</title>
-  <meta name="description" content="35 years of construction experience. Family-run, locally owned, full-service demolition and construction. Learn our story.">
+  <title>About Dino's Construction and Demolition LLC | Macomb &amp; St. Clair County Contractor</title>
+  <meta name="description" content="Learn about Dino's Construction and Demolition LLC, a local, family-owned-feel contractor serving Macomb County and St. Clair County with honest remodeling, demolition, and custom home work.">
+  <meta property="og:title" content="About Dino's Construction and Demolition LLC">
+  <meta property="og:description" content="Honest, local remodeling and demolition work for homeowners in Macomb County and St. Clair County.">
+  <meta property="og:image" content="images/projects/og-image.jpg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#151a1c">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <div class="top-bar">
     <div class="container">
-      <span>Serving [Your Area] and surrounding communities</span>
-      <div>
-        <a href="tel:+15551234567">&#9742; (555) 123-4567</a>
-        &nbsp;&bull;&nbsp;
-        <a href="mailto:info@builtrightconstruction.com">info@builtrightconstruction.com</a>
+      <div class="top-bar-info">
+        <span>Serving Macomb County and St. Clair County first, with surrounding projects welcomed.</span>
+      </div>
+      <div class="top-bar-links">
+        <a href="tel:5865314759">586-531-4759</a>
+        <span>|</span>
+        <a href="mailto:Dsdemocon@gmail.com">Dsdemocon@gmail.com</a>
       </div>
     </div>
   </div>
 
   <header class="site-header">
     <div class="container nav-wrap">
-      <a href="index.html" class="logo">Built<span>Right</span></a>
-      <nav>
+      <a class="brand" href="index.html" aria-label="Dino's Construction and Demolition LLC home">
+        <span class="brand-title">Dino's <span>Construction</span></span>
+        <span class="brand-subtitle">And Demolition LLC</span>
+      </a>
+
+      <button class="mobile-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span class="mobile-toggle-bar"></span>
+        <span class="mobile-toggle-bar"></span>
+        <span class="mobile-toggle-bar"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" data-nav>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="about.html" class="active">About</a></li>
-          <li><a href="gallery.html">Projects</a></li>
+          <li><a class="active" href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="contact.html" class="nav-cta">Free Estimate</a></li>
+          <li><a class="nav-cta" href="contact.html">Free Estimate</a></li>
         </ul>
       </nav>
-      <button class="mobile-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
-        <span></span><span></span><span></span>
-      </button>
     </div>
   </header>
 
-  <section class="page-hero">
-    <div class="container">
-      <h1>About Built Right</h1>
-      <p>35 years. One standard. No shortcuts.</p>
-    </div>
-  </section>
+  <main id="main">
+    <section class="page-hero" style="--hero-image: url('images/projects/about-framing.jpg');">
+      <div class="container">
+        <div class="section-kicker">About</div>
+        <h1>Built around local trust, honest work, and quality results</h1>
+        <p>Dino's Construction and Demolition LLC brings a family-owned feel to remodeling, demolition, and residential construction work across Macomb County and St. Clair County.</p>
+      </div>
+    </section>
 
-  <!-- Story -->
-  <section class="section">
-    <div class="container">
-      <div class="about-preview">
-        <div class="about-img">[Photo: Founder / team on site]</div>
-        <div class="about-text">
-          <h2>Started With a Hammer, Built a Reputation</h2>
-          <p>Built Right Construction didn't start with a business plan. It started with a young carpenter who learned the trade from his father, picked up every skill he could, and spent the next 35 years proving that construction can be done honestly.</p>
-          <p>That means showing up when we say we will. Giving you a price and sticking to it. Building things that hold up — not just things that pass inspection. Every wall we frame, every tile we set, every foundation we pour gets the same attention whether it's a small bathroom or a full addition.</p>
-          <p>We're not the cheapest. We're not the flashiest. We're the crew your neighbor recommends because we did right by them.</p>
+    <section class="section">
+      <div class="container">
+        <div class="split-layout">
+          <div class="story-card">
+            <div class="section-kicker">Company Story</div>
+            <div class="section-heading">
+              <h2>A contractor homeowners can talk to without the sales pitch</h2>
+            </div>
+            <p>Dino's Construction and Demolition LLC is meant to feel local because it is local. The company focuses on homeowners in Macomb County and St. Clair County who want practical guidance, honest work, and a contractor that can handle the dirty phase and the finished phase of a project.</p>
+            <p>That family-owned feel shows up in how jobs are discussed, how expectations are set, and how much the finished work matters. The goal is simple: show up, communicate clearly, and leave the homeowner with something solid and well done.</p>
+            <p>Whether the job starts with full demolition, a remodel, or a custom build idea, the approach stays the same: be straightforward, do quality work, and treat the home with respect.</p>
+            <ul class="check-list">
+              <li>Preferred service area is Macomb County and St. Clair County.</li>
+              <li>Projects can include remodels, additions, garage work, demolition, and custom requests.</li>
+              <li>Honest conversations and dependable workmanship stay at the center of the process.</li>
+            </ul>
+          </div>
+
+          <div class="media-frame">
+            <img src="images/projects/custom-stairs.jpg" alt="Custom staircase framing inside a home" loading="lazy">
+            <span class="media-badge">Real project photo</span>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Values -->
-  <section class="section section-dark">
-    <div class="container">
-      <div class="section-header">
-        <h2>How We Work</h2>
-        <p>These aren't slogans. They're how we've operated for three decades.</p>
-        <span class="accent-line"></span>
-      </div>
-      <div class="values-grid">
-        <div class="value-card">
-          <h3>One Crew, Start to Finish</h3>
-          <p>Your project doesn't get passed between random subcontractors. The crew that starts your job finishes it. You know who's in your home and who's responsible for the work.</p>
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">What Clients Can Expect</div>
+          <div class="section-heading">
+            <h2>Core values that fit this brand</h2>
+          </div>
+          <p class="section-copy">This section is written to support a real small-contractor website without inventing fake awards, fake numbers, or overblown claims.</p>
         </div>
-        <div class="value-card">
-          <h3>Straight Talk, Honest Pricing</h3>
-          <p>We tell you what it costs before we start. If something changes, we talk about it first. No surprise invoices, no hidden fees, no "we found something" upsells.</p>
-        </div>
-        <div class="value-card">
-          <h3>Demo and Rebuild Under One Roof</h3>
-          <p>Most companies do one or the other. We do both. Tear it out, haul it off, and build it back — all coordinated by one team. Fewer handoffs means fewer problems.</p>
-        </div>
-        <div class="value-card">
-          <h3>Clean Sites, Clear Communication</h3>
-          <p>We clean up every day before we leave. We answer calls and texts. If there's a delay, you hear it from us before you notice it yourself.</p>
-        </div>
-        <div class="value-card">
-          <h3>Built to Code, Built to Last</h3>
-          <p>We don't build to the minimum. We build to the standard we'd want in our own homes. Proper materials, proper technique, proper inspections.</p>
-        </div>
-        <div class="value-card">
-          <h3>Local and Accountable</h3>
-          <p>We live and work in this community. Our reputation is our business. If something isn't right, we come back and make it right — that's not a policy, it's personal.</p>
+
+        <div class="value-grid">
+          <article class="value-card">
+            <h3>Honest Communication</h3>
+            <p>Homeowners should know what is happening, what changes, and what comes next without chasing updates.</p>
+          </article>
+          <article class="value-card">
+            <h3>Quality Workmanship</h3>
+            <p>From demo prep to finish details, the standard stays focused on work that looks right and lasts.</p>
+          </article>
+          <article class="value-card">
+            <h3>Local Accountability</h3>
+            <p>Serving the Macomb and St. Clair area means reputation matters, and the work should reflect that.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Trust Numbers -->
-  <div class="trust-bar">
-    <div class="container">
-      <div class="trust-grid">
-        <div class="trust-item">
-          <strong>35+</strong>
-          <span>Years Experience</span>
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Team Placeholders</div>
+          <div class="section-heading">
+            <h2>Ready for owner and crew profiles</h2>
+          </div>
+          <p class="section-copy">These three cards are intentionally built as placeholders so the owner can later swap in real headshots, names, titles, and bios.</p>
         </div>
-        <div class="trust-item">
-          <strong>500+</strong>
-          <span>Projects Completed</span>
+
+        <div class="team-grid">
+          <article class="team-card">
+            <div class="team-photo">
+              <img src="https://picsum.photos/seed/dino-team-1/480/520" alt="Placeholder portrait for team member one" loading="lazy">
+            </div>
+            <div class="team-body">
+              <small>Placeholder Team Card</small>
+              <h3>Team Member Name</h3>
+              <p><strong>Title:</strong> Owner / Lead Contractor</p>
+              <p>Use this bio space to describe experience, specialties, and how this person helps clients through the project.</p>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <div class="team-photo">
+              <img src="https://picsum.photos/seed/dino-team-2/480/520" alt="Placeholder portrait for team member two" loading="lazy">
+            </div>
+            <div class="team-body">
+              <small>Placeholder Team Card</small>
+              <h3>Team Member Name</h3>
+              <p><strong>Title:</strong> Project Manager</p>
+              <p>Replace this with a short bio about job coordination, communication, and what this person handles on site.</p>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <div class="team-photo">
+              <img src="https://picsum.photos/seed/dino-team-3/480/520" alt="Placeholder portrait for team member three" loading="lazy">
+            </div>
+            <div class="team-body">
+              <small>Placeholder Team Card</small>
+              <h3>Team Member Name</h3>
+              <p><strong>Title:</strong> Lead Carpenter / Builder</p>
+              <p>Use this final card for a crew leader or specialist whose craftsmanship adds trust to the website.</p>
+            </div>
+          </article>
         </div>
-        <div class="trust-item">
-          <strong>100%</strong>
-          <span>Licensed &amp; Insured</span>
-        </div>
-        <div class="trust-item">
-          <strong>Free</strong>
-          <span>Estimates Always</span>
+
+        <div class="cta-panel">
+          <div>
+            <h2>Want to talk to a local contractor?</h2>
+            <p>Reach out with your project details and preferred contact time. We will make it easy for someone to get back to you.</p>
+          </div>
+          <a class="btn btn-light" href="contact.html">Contact Dino's</a>
         </div>
       </div>
-    </div>
-  </div>
-
-  <section class="cta-banner">
-    <div class="container">
-      <h2>Want to Talk About Your Project?</h2>
-      <p>We'll walk the site, listen to what you need, and give you an honest number. No cost, no pressure.</p>
-      <a href="contact.html" class="btn btn-white">Request a Free Estimate</a>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-about">
-          <div class="logo">Built<span>Right</span></div>
-          <p>Full-service construction and demolition. 35 years of building homes the right way. Licensed, insured, and ready to work.</p>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <span class="brand-title">Dino's <span>Construction</span></span>
+            <span class="brand-subtitle">And Demolition LLC</span>
+          </a>
+          <p>Local contractor service with honest communication, dependable workmanship, and a strong residential focus.</p>
         </div>
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
-          <a href="about.html">About Us</a>
-          <a href="gallery.html">Projects</a>
-          <a href="contact.html">Contact</a>
+
+        <div class="footer-block">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
-        <div class="footer-contact">
-          <h4>Contact</h4>
-          <p>&#9742; (555) 123-4567</p>
-          <p>&#9993; info@builtrightconstruction.com</p>
-          <p>&#9872; [Your City, State]</p>
+
+        <div class="footer-block">
+          <h3 class="footer-heading">Contact</h3>
+          <ul class="footer-list">
+            <li><a href="tel:5865314759">586-531-4759</a></li>
+            <li><a href="mailto:Dsdemocon@gmail.com">Dsdemocon@gmail.com</a></li>
+            <li>Macomb County and St. Clair County preferred</li>
+          </ul>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Built Right Construction. All rights reserved.</p>
+
+      <div class="footer-note">
+        <span>&copy; <span class="current-year">2026</span> Dino's Construction and Demolition LLC. All rights reserved.</span>
+        <span>Your Local Contractor &mdash; Honest + Quality Work</span>
       </div>
     </div>
   </footer>
-
 </body>
 </html>
