@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="images/gallery/gallery-data.js"></script>
   <script src="js/main.js" defer></script>
 </head>
 <body>
@@ -62,8 +63,8 @@
     <section class="page-hero" style="--hero-image: url('images/gallery/kitchen%20different.png');">
       <div class="container">
         <div class="section-kicker">Gallery</div>
-        <h1>Filter through project inspiration by room type</h1>
-        <p>This page uses stable placeholder images from Picsum so the owner can later swap in a larger portfolio without changing the gallery layout or filter behavior.</p>
+        <h1>Real work from real projects</h1>
+        <p>Browse completed work from kitchens, bathrooms, additions, and demolition jobs across Macomb County and St. Clair County.</p>
       </div>
     </section>
 
@@ -71,11 +72,11 @@
       <div class="container">
         <div class="gallery-toolbar">
           <div class="section-header" style="margin-bottom: 0;">
-            <div class="section-kicker">Filterable Grid</div>
+            <div class="section-kicker">Project Photos</div>
             <div class="section-heading">
-              <h2>Kitchen, bathroom, addition, and demo placeholders</h2>
+              <h2>Filter by project type</h2>
             </div>
-            <p class="section-copy">Each card uses a stable Picsum 800 by 600 placeholder image so the owner can preview a finished gallery experience right now.</p>
+            <p class="section-copy">Use the buttons below to filter by project type. New photos are added as jobs are completed.</p>
           </div>
 
           <div class="filter-list" aria-label="Gallery filters">
@@ -83,88 +84,35 @@
             <button class="filter-button" type="button" data-filter-button="kitchen" aria-pressed="false">Kitchen</button>
             <button class="filter-button" type="button" data-filter-button="bathroom" aria-pressed="false">Bathroom</button>
             <button class="filter-button" type="button" data-filter-button="addition" aria-pressed="false">Addition</button>
-            <button class="filter-button" type="button" data-filter-button="demo" aria-pressed="false">Demo</button>
+            <button class="filter-button" type="button" data-filter-button="flooring" aria-pressed="false">Flooring</button>
+            <button class="filter-button" type="button" data-filter-button="custom" aria-pressed="false">Custom</button>
           </div>
         </div>
 
-        <div class="gallery-grid">
-          <article class="gallery-card" data-filter-card data-category="kitchen">
-            <img src="https://picsum.photos/seed/dino-kitchen-1/800/600" alt="Placeholder kitchen project inspiration one" loading="lazy">
-            <div class="gallery-card-body">
-              <small>Kitchen</small>
-              <h3>Open kitchen concept</h3>
-              <p>Placeholder image for a bright remodel with better flow and added prep space.</p>
-            </div>
-          </article>
+        <div class="gallery-grid" id="gallery-grid"></div>
 
-          <article class="gallery-card" data-filter-card data-category="kitchen">
-            <img src="https://picsum.photos/seed/dino-kitchen-2/800/600" alt="Placeholder kitchen project inspiration two" loading="lazy">
-            <div class="gallery-card-body">
-              <small>Kitchen</small>
-              <h3>Cabinet and island refresh</h3>
-              <p>Use this tile later for a finished kitchen project with a strong before-and-after story.</p>
-            </div>
-          </article>
-
-          <article class="gallery-card" data-filter-card data-category="bathroom">
-            <img src="https://picsum.photos/seed/dino-bathroom-1/800/600" alt="Placeholder bathroom project inspiration one" loading="lazy">
-            <div class="gallery-card-body">
-              <small>Bathroom</small>
-              <h3>Tile shower upgrade</h3>
-              <p>Placeholder image for a bathroom remodel focused on cleaner finishes and better daily use.</p>
-            </div>
-          </article>
-
-          <article class="gallery-card" data-filter-card data-category="bathroom">
-            <img src="https://picsum.photos/seed/dino-bathroom-2/800/600" alt="Placeholder bathroom project inspiration two" loading="lazy">
-            <div class="gallery-card-body">
-              <small>Bathroom</small>
-              <h3>Modern vanity update</h3>
-              <p>Use this slot for a bathroom project that highlights style, function, and durable materials.</p>
-            </div>
-          </article>
-
-          <article class="gallery-card" data-filter-card data-category="addition">
-            <img src="https://picsum.photos/seed/dino-addition-1/800/600" alt="Placeholder addition project inspiration one" loading="lazy">
-            <div class="gallery-card-body">
-              <small>Addition</small>
-              <h3>Expanded family space</h3>
-              <p>Placeholder for a project that adds square footage while keeping the home cohesive.</p>
-            </div>
-          </article>
-
-          <article class="gallery-card" data-filter-card data-category="addition">
-            <img src="https://picsum.photos/seed/dino-addition-2/800/600" alt="Placeholder addition project inspiration two" loading="lazy">
-            <div class="gallery-card-body">
-              <small>Addition</small>
-              <h3>New room connection</h3>
-              <p>Great spot for an addition case study showing how old and new spaces tie together.</p>
-            </div>
-          </article>
-
-          <article class="gallery-card" data-filter-card data-category="demo">
-            <img src="https://picsum.photos/seed/dino-demo-1/800/600" alt="Placeholder demolition project inspiration one" loading="lazy">
-            <div class="gallery-card-body">
-              <small>Demo</small>
-              <h3>Interior tear-out phase</h3>
-              <p>Placeholder for the kind of before-stage photo that sets up a strong remodel story.</p>
-            </div>
-          </article>
-
-          <article class="gallery-card" data-filter-card data-category="demo">
-            <img src="https://picsum.photos/seed/dino-demo-2/800/600" alt="Placeholder demolition project inspiration two" loading="lazy">
-            <div class="gallery-card-body">
-              <small>Demo</small>
-              <h3>Cleared and ready to rebuild</h3>
-              <p>Use this later for a project that starts with demolition and ends in a full transformation.</p>
-            </div>
-          </article>
-        </div>
+        <script>
+          (function () {
+            var grid = document.getElementById('gallery-grid');
+            if (!grid || !window.GALLERY_ITEMS) return;
+            var labels = { kitchen: 'Kitchen', bathroom: 'Bathroom', addition: 'Addition', flooring: 'Flooring', custom: 'Custom' };
+            GALLERY_ITEMS.forEach(function (item) {
+              var article = document.createElement('article');
+              article.className = 'gallery-card';
+              article.setAttribute('data-filter-card', '');
+              article.setAttribute('data-category', item.category);
+              article.innerHTML =
+                '<img src="' + item.src + '" alt="' + item.alt + '" loading="lazy">' +
+                '<div class="gallery-card-body"><small>' + (labels[item.category] || item.category) + '</small></div>';
+              grid.appendChild(article);
+            });
+          })();
+        </script>
 
         <div class="cta-panel">
           <div>
-            <h2>Want your project featured here later?</h2>
-            <p>Start with the estimate form. Once the real project photos are ready, this gallery can be swapped from placeholders to completed work without changing the code structure.</p>
+            <h2>Have a project you'd like to discuss?</h2>
+            <p>Reach out with details about your space. We'll talk through what it takes and give you a straight answer.</p>
           </div>
           <a class="btn btn-light" href="contact.html">Get In Touch</a>
         </div>
@@ -180,7 +128,7 @@
             <span class="brand-title">Dino's <span>Construction</span></span>
             <span class="brand-subtitle">And Demolition LLC</span>
           </a>
-          <p>Filterable gallery layout ready for real kitchen, bathroom, addition, and demo project photography.</p>
+          <p>Photos from real kitchens, bathrooms, additions, and demolition work in Macomb County and St. Clair County.</p>
         </div>
 
         <div class="footer-block">
