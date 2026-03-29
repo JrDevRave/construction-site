@@ -19,18 +19,18 @@ var GALLERY_ITEMS = [
   { src: 'images/gallery/bathroom/img41_full.jpg', category: 'bathroom', alt: 'Double vanity with marble countertop and glass tile backsplash' },
   { src: 'images/gallery/bathroom/img45_full.jpg', category: 'bathroom', alt: 'Soaking tub with tiled surround and accent wall' },
 
-  // Addition & New Construction
-  { src: 'images/gallery/addition/crawl space not covered.jpg',        category: 'addition', alt: 'New home foundation with concrete piers and gravel bed' },
-  { src: 'images/gallery/addition/covered crawlspace first floor.jpg', category: 'addition', alt: 'First floor subfloor framing on new waterfront build' },
-  { src: 'images/gallery/addition/models for concrete.jpg',            category: 'addition', alt: 'Concrete forms and rebar staged for foundation pour' },
-  { src: 'images/gallery/addition/first floor framing.jpg',            category: 'addition', alt: 'First floor interior framing on new construction' },
-  { src: 'images/gallery/addition/framing top.jpg',                    category: 'addition', alt: 'Roof truss and exterior wall framing' },
-  { src: 'images/gallery/addition/upstairs framing.jpg',               category: 'addition', alt: 'Second floor interior framing with vaulted ceiling' },
-  { src: 'images/gallery/addition/windows upstairs.jpg',               category: 'addition', alt: 'Framed upstairs room with new windows and water view' },
-  { src: 'images/gallery/addition/bare stairs.jpg',                    category: 'addition', alt: 'Staircase framing with board and batten accent wall' },
-  { src: 'images/gallery/addition/wood steps.jpg',                     category: 'addition', alt: 'New construction staircase framing in progress' },
-  { src: 'images/gallery/addition/insulated atic.jpg',                 category: 'addition', alt: 'Attic insulation installed in new construction' },
-  { src: 'images/gallery/addition/insulation upstairs.jpg',            category: 'addition', alt: 'Ceiling insulation with recessed lighting rough-in' },
+  // New Construction
+  { src: 'images/gallery/new-construction/crawl space not covered.jpg',        category: 'new-construction', alt: 'New home foundation with concrete piers and gravel bed' },
+  { src: 'images/gallery/new-construction/covered crawlspace first floor.jpg', category: 'new-construction', alt: 'First floor subfloor framing on new waterfront build' },
+  { src: 'images/gallery/new-construction/models for concrete.jpg',            category: 'new-construction', alt: 'Concrete forms and rebar staged for foundation pour' },
+  { src: 'images/gallery/new-construction/first floor framing.jpg',            category: 'new-construction', alt: 'First floor interior framing on new construction' },
+  { src: 'images/gallery/new-construction/framing top.jpg',                    category: 'new-construction', alt: 'Roof truss and exterior wall framing' },
+  { src: 'images/gallery/new-construction/upstairs framing.jpg',               category: 'new-construction', alt: 'Second floor interior framing with vaulted ceiling' },
+  { src: 'images/gallery/new-construction/windows upstairs.jpg',               category: 'new-construction', alt: 'Framed upstairs room with new windows and water view' },
+  { src: 'images/gallery/new-construction/bare stairs.jpg',                    category: 'new-construction', alt: 'Staircase framing with board and batten accent wall' },
+  { src: 'images/gallery/new-construction/wood steps.jpg',                     category: 'new-construction', alt: 'New construction staircase framing in progress' },
+  { src: 'images/gallery/new-construction/insulated atic.jpg',                 category: 'new-construction', alt: 'Attic insulation installed in new construction' },
+  { src: 'images/gallery/new-construction/insulation upstairs.jpg',            category: 'new-construction', alt: 'Ceiling insulation with recessed lighting rough-in' },
 
   // Flooring
   { src: 'images/gallery/flooring/DSCN0958.JPG',          category: 'flooring', alt: 'Tile entryway with dark hardwood transition to dining room' },
@@ -45,8 +45,5 @@ var GALLERY_ITEMS = [
   { src: 'images/gallery/custom/hr_0444_363_066__0444363066012.jpg',    category: 'custom', alt: 'Stone and brick arched wine cellar entry with wrought iron door' },
   { src: 'images/gallery/custom/img1_full.jpg',                         category: 'custom', alt: 'Custom wrought iron curved staircase railing' },
   { src: 'images/gallery/custom/IMG_0871.jpg',                          category: 'custom', alt: 'Custom ocean mosaic tile mural above indoor pool' },
-
-  // New Construction — add photos to images/gallery/new-construction/ and list them here
-  // { src: 'images/gallery/new-construction/your-photo.jpg', category: 'new-construction', alt: 'Description here' },
 
 ];
