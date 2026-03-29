@@ -1,5 +1,5 @@
 // Gallery manifest — to add a photo: copy it to the right category folder, then add an entry here.
-// Category options: kitchen | bathroom | addition | flooring | custom
+// Category options: kitchen | bathroom | addition | flooring | custom | new-construction
 var GALLERY_ITEMS = [
 
   // Kitchen
@@ -45,5 +45,8 @@ var GALLERY_ITEMS = [
   { src: 'images/gallery/custom/hr_0444_363_066__0444363066012.jpg',    category: 'custom', alt: 'Stone and brick arched wine cellar entry with wrought iron door' },
   { src: 'images/gallery/custom/img1_full.jpg',                         category: 'custom', alt: 'Custom wrought iron curved staircase railing' },
   { src: 'images/gallery/custom/IMG_0871.jpg',                          category: 'custom', alt: 'Custom ocean mosaic tile mural above indoor pool' },
+
+  // New Construction — add photos to images/gallery/new-construction/ and list them here
+  // { src: 'images/gallery/new-construction/your-photo.jpg', category: 'new-construction', alt: 'Description here' },
 
 ];

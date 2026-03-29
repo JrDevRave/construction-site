@@ -86,6 +86,7 @@
             <button class="filter-button" type="button" data-filter-button="addition" aria-pressed="false">Addition</button>
             <button class="filter-button" type="button" data-filter-button="flooring" aria-pressed="false">Flooring</button>
             <button class="filter-button" type="button" data-filter-button="custom" aria-pressed="false">Custom</button>
+            <button class="filter-button" type="button" data-filter-button="new-construction" aria-pressed="false">New Construction</button>
           </div>
         </div>
 
@@ -95,7 +96,7 @@
           (function () {
             var grid = document.getElementById('gallery-grid');
             if (!grid || !window.GALLERY_ITEMS) return;
-            var labels = { kitchen: 'Kitchen', bathroom: 'Bathroom', addition: 'Addition', flooring: 'Flooring', custom: 'Custom' };
+            var labels = { kitchen: 'Kitchen', bathroom: 'Bathroom', addition: 'Addition', flooring: 'Flooring', custom: 'Custom', 'new-construction': 'New Construction' };
             GALLERY_ITEMS.forEach(function (item) {
               var article = document.createElement('article');
               article.className = 'gallery-card';
