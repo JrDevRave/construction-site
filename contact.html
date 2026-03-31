@@ -22,7 +22,7 @@
   <div class="top-bar">
     <div class="container">
       <div class="top-bar-info">
-        <span>Serving Macomb County and St. Clair County first, with surrounding projects welcomed.</span>
+        <span>Serving Macomb and St. Clair County first, with surrounding projects welcomed.</span>
       </div>
       <div class="top-bar-links">
         <a href="tel:5865314759">586-531-4759</a>
@@ -75,9 +75,9 @@
           <div class="contact-panel">
             <div class="section-kicker">Lead Form</div>
             <h2>Tell us what you need</h2>
-            <p>Use the form for remodels, additions, demolition, garage builds, or custom work. The Formspree action is already wired with a clear placeholder for the owner to replace.</p>
+            <p>Use the form for remodels, additions, demolition, garage builds, or custom work. Submissions go directly to Dsdemocon@gmail.com.</p>
 
-            <form class="contact-form" action="https://formspree.io/f/[FORMSPREE_ID]" method="POST">
+            <form class="contact-form" action="https://formsubmit.co/Dsdemocon@gmail.com" method="POST">
               <div class="field-row">
                 <div class="field">
                   <label for="name">Name</label>
@@ -119,7 +119,10 @@
                 <input id="preferred-contact-time" name="preferred_contact_time" type="text" placeholder="Weekday mornings, evenings after 5, Saturday, etc." required>
               </div>
 
-              <input type="hidden" name="_subject" value="New website lead for Dino's Construction and Demolition LLC">
+              <input type="hidden" name="_subject" value="New Estimate Request — Dino's Construction and Demolition LLC">
+              <input type="hidden" name="_captcha" value="true">
+              <input type="hidden" name="_next" value="https://jrdevrave.github.io/construction-site/thankyou.html">
+              <input type="text" name="_honey" style="display:none">
               <button class="btn btn-primary" type="submit">Send Estimate Request</button>
             </form>
           </div>
