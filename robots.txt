@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jrdevrave.github.io/construction-site/sitemap.xml
